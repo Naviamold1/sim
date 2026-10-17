@@ -1,0 +1,18 @@
+{
+  "name": "@pb/ai",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@pb/scenarios": "workspace:*",
+    "@pb/sim": "workspace:*",
+    "zod": "^4.6.7"
+  }
+}

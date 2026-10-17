@@ -1,0 +1,22 @@
+{
+  "name": "@pb/model-api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "typecheck": "tsc -p .",
+    "test": "vitest run",
+    "measure": "tsx scripts/measure.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.5",
+    "ajv": "^8.20.0",
+    "hono": "^4.13.13",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15"
+  }
+}

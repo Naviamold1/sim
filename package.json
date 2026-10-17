@@ -1,0 +1,26 @@
+{
+  "name": "politics-battle",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.34.7",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @pb/web dev",
+    "dev:all": "pnpm --parallel --filter @pb/model-api --filter @pb/web dev",
+    "dev:model": "pnpm --filter @pb/model-api dev",
+    "dev:web": "pnpm --filter @pb/web dev",
+    "build": "pnpm --filter @pb/web build",
+    "start": "pnpm --filter @pb/web start",
+    "smoke": "pnpm --filter @pb/web smoke",
+    "rehearse": "pnpm --filter @pb/web exec tsx ../../scripts/rehearse.ts",
+    "test": "vitest run",
+    "typecheck": "pnpm -r --parallel typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "~5.9.3",
+    "vitest": "^5.0.5"
+  }
+}
